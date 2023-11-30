@@ -1,16 +1,10 @@
-import logo from '../resources/images/logo.svg';
-import '../resources/stylesheets/App.css';
-import Account from "./component/Account";
+import '../resources/stylesheets/Application.css';
+import PostPreview from "./components/PostPreview";
 
 function Application() {
     return (
         <>
-            <img alt="" src={logo} width={"128px"}/>
-            <Account account_username={"user190" + (Math.random().toFixed(1) * 10).toString()}/>
-            <Account account_username={"user190" + (Math.random().toFixed(1) * 10).toString()}/>
-            <Account account_username={"user190" + (Math.random().toFixed(1) * 10).toString()}/>
-            <Account/>
-            <Account account_username={"user1900"}/>
+            <PostPreview/>
         </>
     );
 }

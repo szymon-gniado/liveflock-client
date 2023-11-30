@@ -1,4 +1,4 @@
-import useFetch from "../hook/useFetch";
+import useFetch from "../hooks/useFetch";
 
 function Account({account_username = ""}) {
 
