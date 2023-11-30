@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 
-export default function useFetch(url) {
+const useFetch = (url) => {
     const [status, setStatus] = useState("pending");
     const [error, setError] = useState(null);
     const [data, setData] = useState({});
@@ -8,10 +8,8 @@ export default function useFetch(url) {
     async function getAccount(url) {
         try {
             const response = await fetch(url);
-            if (response.ok) {
-                setStatus("ok");
-                setData(await response.json())
-            } else throw Error("Network response was not ok");
+            setStatus("ok");
+            setData(await response.json())
         } catch (error) {
             setStatus("error");
             setError(error);
@@ -23,3 +21,5 @@ export default function useFetch(url) {
     }, [url]);
     return [status, error, data];
 }
+
+export default useFetch;
