@@ -18,10 +18,10 @@ const PostPreview = () => {
         <article className="post-preview">
             <p>
                 <ul className="post-links">
-                    <li><a><img src={logo} alt=""/></a></li>
-                    <li><a>Board Name </a></li>
-                    <li><a> Posted by user</a></li>
-                    <li> 2h ago</li>
+                    <li><a><img src={logo} alt="" width="24px"/></a></li>
+                    <li><a>Board Name</a></li>
+                    <li><a>Posted by user</a></li>
+                    <li>2h ago</li>
                 </ul>
             </p>
             <h1>Post Title </h1>
